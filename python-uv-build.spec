@@ -3,7 +3,7 @@
 %define oname uv_build
 
 Name:		python-uv-build
-Version:	0.11.5
+Version:	0.11.6
 Release:	1
 Summary:	The uv-build backend
 Group:		Development/Python
@@ -23,8 +23,8 @@ BuildRequires:  rust-packaging
 %description
 This package is a cut down version of uv only providing the uv-build backend.
 
-%prep
-%autosetup -n %{oname}-%{version} -p1 -a1
+%prep -a
+tar xf %{S:1}
 # prep vendorered crates
 %cargo_prep -v vendor/
 # create .cargo/config file from vendoring output

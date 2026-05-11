@@ -3,7 +3,7 @@
 %define oname uv_build
 
 Name:		python-uv-build
-Version:	0.11.12
+Version:	0.11.13
 Release:	1
 Summary:	The uv-build backend
 Group:		Development/Python
